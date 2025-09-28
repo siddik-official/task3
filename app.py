@@ -21,7 +21,7 @@ def is_natural_number(value):
     except (ValueError, TypeError):
         return False
 
-@app.route('/official.siddik@gmail.com')
+@app.route('/official_siddik_gmail_com')
 def calculate_lcm():
     """Calculate LCM of two natural numbers x and y"""
     x_param = request.args.get('x')
@@ -42,7 +42,7 @@ def calculate_lcm():
 @app.route('/')
 def home():
     """Basic health check endpoint"""
-    return "LCM Calculator API is running. Use /official.siddik@gmail.com?x={}&y={}"
+    return "LCM Calculator API is running. Use /official_siddik_gmail_com?x={}&y={}"
 
 if __name__ == '__main__':
     import os
